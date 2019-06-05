@@ -7,7 +7,7 @@ if: branch = master
 
 script:
 # - powershell set-executionpolicy unrestricted
-  - docker build -t "pixpan/space-engineers" .
-  - docker tag pixpan/space-engineers "pixpan/space-engineers:0.$TRAVIS_BUILD_NUMBER"
-  - echo "$docker_password" | docker login -u "$docker_username" --password-stdin
-  - docker push "pixpan/space-engineers"
+  - docker build -t "zeiban/space-engineers-server-ltsc2016" .
+  - docker tag zeiban/space-engineers-server-ltsc2016 "zeiban/space-engineers-server-ltsc2016:0.$TRAVIS_BUILD_NUMBER"
+#  - echo "$docker_password" | docker login -u "$docker_username" --password-stdin
+#  - docker push "zeiban/space-engineers-server-ltsc2016"
