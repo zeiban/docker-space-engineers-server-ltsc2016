@@ -1,4 +1,4 @@
-FROM zeiban/steamcmd-ltcs2016
+FROM zeiban/steamcmd-ltsc2016
 
 # Directory for server instance
 RUN if not exist "C:\data" mkdir C:\data
